@@ -2,6 +2,83 @@
 <html>
 <head>
 <style>
+    body {
+        font: 100% Courier New;
+        margin: 20px;
+        line-height: 26px;
+        background-color: black;
+    }
+
+    #top {
+        color: greenyellow;
+        padding: 5pt;
+        line-height: 10px;
+        margin: 0;
+    }
+
+    .wrapper {
+        position: relative;
+        overflow: auto; 
+    }
+
+    #top, #sidebar, #bottom, .menuitem {
+        border-radius: 4px;
+        margin: 1px;
+    }
+
+    #menubar {
+        float: left;
+        width: 70%;
+        height: 180px;
+    }
+
+    .menulist {
+        color: greenyellow;
+
+    }
+
+    .menuitem:nth-child(2) {
+        color: white;
+        font-weight: bold;
+    } 
+    
+    .menuitem {
+        color: greenyellow;
+        cursor: pointer;
+    }
+
+    #sidebar {
+        float: right;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        width: 240pt;
+        position: absolute;
+        font-size: small;
+        line-height: 20px;
+    }
+
+    #main {
+        margin-top: 200px;
+        margin-left: 10px;
+        width: 99%;
+        color: greenyellow;
+    }
+
+    #bottom {
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        text-align: center;
+        font-size: 70%;
+        line-height: 14px;
+    }
+
+    a {
+        color: white;
+    }
 
 </style>
 </head>
@@ -10,15 +87,15 @@
 <body>
     <div class="container wrapper">
         <div id="top">
-            <h1>Welcome to 22100409's Homepage!</h1>
+            <h1>Welcome to 22100409's Homepage</h1>
             <p>Use the menu to select different Stylesheets</p>
         </div>
 
         <div class="wrapper">
             <div id="menubar">
                 <ul id="menulist">
-                   <li class="menuitem"><a href='style1.html'>Stylesheet 1</a></li>
-                   <li class="menuitem"><a href='style2.html'>Stylesheet 2</a></li>
+                   <li class="menuitem"><a href='style1.html'>Stylesheet 1</a>
+                   <li class="menuitem"><a href='style2.html'>Stylesheet 2</a>
                    <li class="menuitem"><a href='nostyle.html'>No Stylesheet</a>
                 </ul>
             </div>
