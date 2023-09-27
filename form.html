@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <form>
-        <label for="fname">Firstname:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Lastname:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <input type="submit" value="Submit">
-    </form>
+
+<h2>HTML Forms</h2>
+
+<form action="form.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Type here"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Type here"><br><br>
+  
+  <label for="gender">Gender:</label><br>
+  <input type="radio" id="gender" name="boy">Male 
+  <input type="radio" id="gender" name="girl">Female <br><br>
+  
+  <label for="semester">Current semester:</label><br>
+  <select id="dropdown" name="semester">
+  <option value="freshman">Freshman</option>
+  <option value="sophomore">Sophomore</option>
+  <option value="junior">Junior</option>
+  <option value="senior">Senior and above</option></select><br><br>
+  
+  <label for="department">Major departments:</label><br>
+  <input type="checkbox" id="majors" name="GLS">GLS<br>
+  <input type="checkbox" id="majors" name="CSEE">CSEE<br>
+  <input type="checkbox" id="majors" name="ISLL">CSEE<br>
+  <input type="checkbox" id="majors" name="GM">GM<br>
+  <input type="checkbox" id="majors" name="GCE">GCE<br>
+  <input type="checkbox" id="majors" name="others">Others:<br> 
+  <textarea id="others" name="otherMajor" rows="1" cols="30"></textarea><br><br>
+  
+  <label for="date">Enrolment date:</label>
+  <input type="date" id="date" name="enrollment_date"><br><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
 </body>
+</html>
